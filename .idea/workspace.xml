@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2a0f8033-6647-4eb8-a3aa-c09a638be29f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZYtuV6qs4hyaZOGmbZLn5uM4Ko" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Aadi.Aaditya.Main" />
+      <module name="ChessGame" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2a0f8033-6647-4eb8-a3aa-c09a638be29f" name="Default Changelist" comment="" />
+      <created>1585028077311</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585028077311</updated>
+      <workItem from="1585028083633" duration="7973000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2365" y="41" key="#com.intellij.ide.util.MemberChooser" timestamp="1585073678078">
+      <screen x="0" y="0" width="3520" height="1043" />
+    </state>
+    <state x="2365" y="41" key="#com.intellij.ide.util.MemberChooser/0.0.3520.1043@0.0.3520.1043" timestamp="1585073678078" />
+    <state x="2294" y="195" key="extract.method.dialog" timestamp="1585073219482">
+      <screen x="0" y="0" width="3520" height="1043" />
+    </state>
+    <state x="2294" y="195" key="extract.method.dialog/0.0.3520.1043@0.0.3520.1043" timestamp="1585073219482" />
+  </component>
+</project>
