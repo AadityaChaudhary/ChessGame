@@ -9,19 +9,19 @@ public class Position {
         this.posY = y;
     }
 
-    public int getPosX() {
+    public int getX() {
         return posX;
     }
 
-    public int getPosY() {
+    public int getY() {
         return posY;
     }
 
-    public void setPosX(int posX) {
+    public void setX(int posX) {
         this.posX = posX;
     }
 
-    public void setPosY(int posY) {
+    public void setY(int posY) {
         this.posY = posY;
     }
 }

@@ -6,32 +6,32 @@ import java.util.ArrayList;
 
 public class Pawn extends Piece {
     @Override
-    boolean isMovePossible(int x, int y) {
+    public boolean isMovePossible(int x, int y) {
         if(this.isWhite) {
-            int diffX = x - this.pos.getPosX();
-            int diffY = y - this.pos.getPosY();
+            int diffX = x - this.pos.getX();
+            int diffY = y - this.pos.getY();
 
             return Math.abs(diffX) == 0 && diffY == 1;
 
         } else {
-            int diffX = x - this.pos.getPosX();
-            int diffY = y - this.pos.getPosY();
+            int diffX = x - this.pos.getX();
+            int diffY = y - this.pos.getY();
 
             return Math.abs(diffX) == 0 && diffY == -1;
         }
     }
 
     @Override
-    boolean isAttackPossible(int x, int y) {
+    public boolean isAttackPossible(int x, int y) {
         if(this.isWhite) {
-            int diffX = x - this.pos.getPosX();
-            int diffY = y - this.pos.getPosY();
+            int diffX = x - this.pos.getX();
+            int diffY = y - this.pos.getY();
 
             return Math.abs(diffX) == 1 && diffY == 1;
 
         } else {
-            int diffX = x - this.pos.getPosX();
-            int diffY = y - this.pos.getPosY();
+            int diffX = x - this.pos.getX();
+            int diffY = y - this.pos.getY();
 
             return Math.abs(diffX) == 1 && diffY == -1;
         }
@@ -40,15 +40,19 @@ public class Pawn extends Piece {
     //literally just returns the given target, as pawns only move one piece at a time anyway
     //make sure to
     @Override
-    ArrayList<Position> getPath(int x, int y) {
+    public ArrayList<Position> getPath(int x, int y) {
         ArrayList<Position> list = new ArrayList<Position>();
         list.add(new Position(x,y));
         return list;
     }
 
-    public Pawn(Position pos, boolean white) {
-        this.pos = pos;
+    public Pawn(int x, int y, boolean white) {
+        this.pos = new Position(x,y);
         this.isWhite = white;
         this.pointScore = 0; //TODO figure out actual pointscores
+    }
+    @Override
+    public String toString() {
+        return ((isWhite)? "W":"B") + "-P";
     }
 }

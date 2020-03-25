@@ -7,19 +7,19 @@ import java.util.ArrayList;
 public class Bishop extends Piece {
 
     @Override
-    boolean isMovePossible(int x, int y) {
-        int diffX = x - this.pos.getPosX();
-        int diffY = y - this.pos.getPosY();
+    public boolean isMovePossible(int x, int y) {
+        int diffX = x - this.pos.getX();
+        int diffY = y - this.pos.getY();
 
         return Math.abs(diffX) == Math.abs(diffY);
     }
 
     @Override
-    ArrayList<Position> getPath(int x, int y) {
+    public ArrayList<Position> getPath(int x, int y) {
         ArrayList<Position> positions = new ArrayList<Position>();
 
-        int i = this.pos.getPosY();
-        int j = this.pos.getPosX();
+        int i = this.pos.getY();
+        int j = this.pos.getX();
 
         while(i != y || j != x) {
             i = (i<y) ? i+1 : i-1;
@@ -29,8 +29,13 @@ public class Bishop extends Piece {
         return positions;
     }
 
-    public Bishop(Position pos, boolean white) {
-        this.pos = pos;
+    @Override
+    public String toString() {
+        return ((isWhite)? "W":"B") + "-B";
+    }
+
+    public Bishop(int x, int y, boolean white) {
+        this.pos = new Position(x,y);
         this.isWhite = white;
         this.pointScore = 0; //TODO figure out actual pointscores
     }

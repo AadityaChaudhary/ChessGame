@@ -8,22 +8,23 @@ public abstract class Piece {
 
     int pointScore;
 
-    boolean isWhite;
+    public boolean isWhite;
 
     Position pos;
 
-    abstract boolean isMovePossible(int x, int y);
+    abstract public boolean isMovePossible(int x, int y);
 
-    boolean isAttackPossible(int x, int y) {
+    public boolean  isAttackPossible(int x, int y) {
         return isMovePossible(x,y);
     }
 
-    void setNewPosition(int x, int y) {
-        this.pos.setPosY(y);
-        this.pos.setPosX(x);
+    public void setNewPosition(int x, int y) {
+        this.pos.setY(y);
+        this.pos.setX(x);
     }
 
-    abstract ArrayList<Position> getPath(int x, int y);
+    abstract public ArrayList<Position> getPath(int x, int y);
 
+    abstract public String toString();
 
 }
